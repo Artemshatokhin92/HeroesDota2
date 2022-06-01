@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HeroesDota2</string>
+    <string name="attack_type">Attack Type:</string>
+    <string name="roles">Roles:</string>
+    <string name="base_armor">Base Armor:</string>
+    <string name="base_strength">Base Strength:</string>
+    <string name="base_agility">Base Agility:</string>
+    <string name="base_intellect">Base Intellect:</string>
+    <string name="load_heroes">Load Heroes</string>
+</resources>

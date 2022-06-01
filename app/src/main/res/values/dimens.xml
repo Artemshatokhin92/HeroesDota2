@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_text_characteristic_hero">20sp</dimen>
+    <dimen name="margin_for_text_characteristic_hero">15dp</dimen>
+    <dimen name="margin_start_for_value_characteristic_hero">20dp</dimen>
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_characteristic_hero"
+        tools:context=".DetailsHeroActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iconPrimaryAttr"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            tools:background="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#54191919"
+            android:padding="5dp"
+            android:text="Name Hero"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iconPrimaryAttr"
+            app:layout_constraintStart_toEndOf="@+id/iconPrimaryAttr"
+            app:layout_constraintTop_toTopOf="@+id/iconPrimaryAttr" />
+
+        <LinearLayout
+            android:id="@+id/layoutHealth"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#56D35C"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView">
+
+            <TextView
+                android:id="@+id/tvHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Health"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMana"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#51A7BD"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutHealth">
+
+            <TextView
+                android:id="@+id/tvMana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Mana"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTextAttackType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_for_text_characteristic_hero"
+            android:text="@string/attack_type"
+            android:textColor="#AFAFAF"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutMana" />
+
+        <TextView
+            android:id="@+id/tvValueAttackType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_for_value_characteristic_hero"
+            android:text="Melee"
+            android:textColor="@color/color_for_value_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintBottom_toBottomOf="@id/tvTextAttackType"
+            app:layout_constraintStart_toEndOf="@id/tvTextAttackType"
+            app:layout_constraintTop_toTopOf="@id/tvTextAttackType" />
+
+        <TextView
+            android:id="@+id/tvTextRoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_for_text_characteristic_hero"
+            android:text="@string/roles"
+            android:textColor="@color/color_for_text_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTextAttackType" />
+
+        <TextView
+            android:id="@+id/tvValueRoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_for_value_characteristic_hero"
+            android:text="Roles"
+            android:textColor="@color/color_for_value_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintBottom_toBottomOf="@id/tvTextRoles"
+            app:layout_constraintStart_toEndOf="@id/tvTextRoles"
+            app:layout_constraintTop_toTopOf="@id/tvTextRoles" />
+
+        <TextView
+            android:id="@+id/tvTextBaseArmor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_for_text_characteristic_hero"
+            android:text="@string/base_armor"
+            android:textColor="@color/color_for_text_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTextRoles" />
+
+        <TextView
+            android:id="@+id/tvValueBaseArmor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_for_value_characteristic_hero"
+            android:text="0.0"
+            android:textColor="@color/color_for_value_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintBottom_toBottomOf="@id/tvTextBaseArmor"
+            app:layout_constraintStart_toEndOf="@id/tvTextBaseArmor"
+            app:layout_constraintTop_toTopOf="@id/tvTextBaseArmor" />
+
+        <TextView
+            android:id="@+id/tvTextBaseStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_for_text_characteristic_hero"
+            android:text="@string/base_strength"
+            android:textColor="@color/color_for_text_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTextBaseArmor" />
+
+        <TextView
+            android:id="@+id/tvValueBaseStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_for_value_characteristic_hero"
+            android:text="0.0"
+            android:textColor="@color/color_for_value_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintBottom_toBottomOf="@id/tvTextBaseStrength"
+            app:layout_constraintStart_toEndOf="@id/tvTextBaseStrength"
+            app:layout_constraintTop_toTopOf="@id/tvTextBaseStrength" />
+
+        <TextView
+            android:id="@+id/tvTextBaseAgility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_for_text_characteristic_hero"
+            android:text="@string/base_agility"
+            android:textColor="@color/color_for_text_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTextBaseStrength" />
+
+        <TextView
+            android:id="@+id/tvValueBaseAgility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_for_value_characteristic_hero"
+            android:text="0.0"
+            android:textColor="@color/color_for_value_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintBottom_toBottomOf="@id/tvTextBaseAgility"
+            app:layout_constraintStart_toEndOf="@id/tvTextBaseAgility"
+            app:layout_constraintTop_toTopOf="@id/tvTextBaseAgility" />
+
+        <TextView
+            android:id="@+id/tvTextBaseIntellect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_for_text_characteristic_hero"
+            android:text="@string/base_intellect"
+            android:textColor="@color/color_for_text_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTextBaseAgility" />
+
+        <TextView
+            android:id="@+id/tvValueBaseIntellect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_for_value_characteristic_hero"
+            android:text="0.0"
+            android:textColor="@color/color_for_value_characteristic_hero"
+            android:textSize="@dimen/size_text_characteristic_hero"
+            app:layout_constraintBottom_toBottomOf="@id/tvTextBaseIntellect"
+            app:layout_constraintStart_toEndOf="@id/tvTextBaseIntellect"
+            app:layout_constraintTop_toTopOf="@id/tvTextBaseIntellect" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
